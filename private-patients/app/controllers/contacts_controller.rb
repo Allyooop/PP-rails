@@ -1,5 +1,9 @@
 class ContactsController < ApplicationController
 
+  def index
+    redirect_to action: :new
+  end
+  
   def new
     @contact = Contact.new
   end
