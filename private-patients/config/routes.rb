@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   devise_for :admins, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   
-  get 'static_pages/index' 
-  get 'static_pages/experience'
-  get 'static_pages/payment'
+  get 'index' => 'static_pages#index'
+  get 'experience' => 'static_pages#experience'
+  get 'payment' => 'static_pages#payment'
   
   root to: 'static_pages#index'
 
