@@ -1,6 +1,11 @@
 .sub-nav {
   
+  margin-top: 1px;
   margin-bottom: 0px;
   font-size: 14px;
+  
+  a {
+    color: darken($brand-primary, 8%);
+  }
   
 }
