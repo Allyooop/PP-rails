@@ -1,4 +1,7 @@
 <nav class="navbar navbar-default navbar-static-top">
+      
+  <%= render 'application/partials/sub_nav' %>
+  
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -12,7 +15,6 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to 'Contact us', contacts_path %></li>
             <li><%= link_to 'Patient Information', static_pages_experience_path %></li>
             <li><%= link_to 'Payment', static_pages_payment_path %></li>
           </ul>
