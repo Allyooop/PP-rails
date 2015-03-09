@@ -7,15 +7,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <%= link_to 'Private Treatment', root_path, class: "navbar-brand" %>
+         <%= link_to 'STH Private Health', root_path, class: "navbar-brand" %>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to 'Patient Information', experience_path %></li>
             <li><%= link_to 'Payment', payment_path %></li>
           </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <%= image_tag 'http://www.sth.nhs.uk/images/sheffield-teaching-hospitals.gif', alt: "Logo for Sheffield Teaching Hospitals NHS Foundation Trust" %>
-          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
         </div><!--/.nav-collapse -->
       </div>
