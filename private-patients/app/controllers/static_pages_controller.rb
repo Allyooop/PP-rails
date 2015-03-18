@@ -9,4 +9,7 @@ class StaticPagesController < ApplicationController
   def experience
   end
   
+  def faqs
+  end
+  
 end

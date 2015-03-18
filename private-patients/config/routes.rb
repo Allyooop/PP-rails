@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'index' => 'static_pages#index'
   get 'experience' => 'static_pages#experience'
   get 'payment' => 'static_pages#payment'
+  get 'faqs' => 'static_pages#faqs'
   
   root to: 'static_pages#index'
 
