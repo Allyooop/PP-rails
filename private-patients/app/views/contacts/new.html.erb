@@ -1,31 +1,70 @@
+<% content_for :seo do %>
+  <title>Private Treatment Payment - Sheffield Teaching Hospitals NHS Foundation Trust</title>
+  <meta name="description" content="Sheffield Teaching Hospitals offers a ariety of payment methods such as, credit card, pay as you go, health insurance and payment plans">
+  <meta name="keywords" content="Private treatment, Payment, Sheffield, NHS, Private Hospital">
+  <meta name="author" content="Sheffield Teaching Hospitals">
+<% end %>
 
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8 col-md-offset-2" role="main">
-        <h1>Contact</h1>
-        <%= form_for @contact do |f| %>
-
-          <div class="form-group">
-            <%= f.label :name %>
-            <%= f.text_field :name, class: "form-control" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :email %>
-            <%= f.email_field :email, class: "form-control" %>
-          </div>
-
-          <div class="form-group">
-            <%= f.label :message %>
-            <%= f.text_area :message, class: "form-control" %>
-          </div>
-
-          <div class="form-actions">
-            <%= f.submit "Get in touch", class: "btn btn-warning" %>
-          </div>
-        <% end %>
+<section class="main-title">
+  <div class="container">
+    <div class="row">
+      <h2>Contact us</h2>
     </div>
   </div>
-</div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" role="main">
+        <img src="http://placehold.it/800x200" class="img-responsive">
+        
+        <div class="well">
+          <ol class="breadcrumb">
+            <li><%= link_to 'Home', root_path %></li>
+            <li class="active">Payment Information</li>
+          </ol>
+        </div>
+        
+        <div class="well">
+           <%= form_for @contact do |f| %>
+
+            <div class="form-group">
+              <%= f.label :name %>
+              <%= f.text_field :name, class: "form-control" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :email %>
+              <%= f.email_field :email, class: "form-control" %>
+            </div>
+
+            <div class="form-group">
+              <%= f.label :message %>
+              <%= f.text_area :message, class: "form-control" %>
+            </div>
+
+            <div class="form-actions">
+              <%= f.submit "Get in touch", class: "btn btn-warning" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="well">
+          
+        </div>
+        
+        <div class="well">
+          
+        </div>
+        
+        <div class="well">
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
