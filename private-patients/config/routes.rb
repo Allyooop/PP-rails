@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'questions/index'
+
   resources :contacts, only: [ :index, :new, :create]
 
   devise_for :admins, ActiveAdmin::Devise.config
