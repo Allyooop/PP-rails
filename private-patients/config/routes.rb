@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'questions/index'
 
   resources :contacts, only: [ :index, :new, :create]
 
@@ -10,7 +8,7 @@ Rails.application.routes.draw do
   get 'index' => 'static_pages#index'
   get 'experience' => 'static_pages#experience'
   get 'payment' => 'static_pages#payment'
-  get 'faqs' => 'static_pages#faqs'
+  get 'faqs' => 'questions#index'
   
   root to: 'static_pages#index'
 
