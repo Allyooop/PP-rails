@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150323205252) do
+ActiveRecord::Schema.define(version: 20150323215626) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -61,7 +61,10 @@ ActiveRecord::Schema.define(version: 20150323205252) do
     t.string   "author"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "service_id"
   end
+
+  add_index "metatags", ["service_id"], name: "index_metatags_on_service_id"
 
   create_table "questions", force: :cascade do |t|
     t.string   "title"
