@@ -7,7 +7,7 @@ ActiveAdmin.register Service do
   # string   "banner"
   # integer  "metatag_id"
   # text     "sidebar"
-
+  
   # as with Rails controllers, white list actions
   permit_params :title, :body, :department, :specialty, :banner, :sidebar, :metatag_id
   
