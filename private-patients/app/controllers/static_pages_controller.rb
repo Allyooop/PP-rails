@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
   def payment
   end
   
-  def experience
+  def about
   end
   
   def faqs

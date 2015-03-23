@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   
   get 'index' => 'static_pages#index'
-  get 'experience' => 'static_pages#experience'
+  get 'about' => 'static_pages#about'
   get 'payment' => 'static_pages#payment'
   get 'faqs' => 'questions#index'
   
