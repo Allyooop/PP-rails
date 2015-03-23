@@ -1,2 +1,79 @@
-<h1>Services#show</h1>
-<p>Find me in app/views/services/show.html.erb</p>
+<% content_for :seo do %>
+  <title></title>
+  <meta name="description" content="At Sheffield Teaching Hospitals we pride ourselves on providing world-class treatment">
+  <meta name="keywords" content="Private treatment, Hospital, Sheffield, NHS, Private Hospital">
+  <meta name="author" content="Sheffield Teaching Hospitals">
+<% end %>
+
+<section class="main-title">
+  <div class="container">
+    <div class="row">
+      <h2><%= @service.title %></h2>
+    </div>
+  </div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <img src="<%= @service.banner %>" class="img-responsive">
+        
+        <div class="well">
+          <ol class="breadcrumb">
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'A-Z Services', service_path %></li>
+            <li class="active"><%= @service.title %></li>
+          </ol>
+        </div>
+        
+        <div class="well">
+          <%= @service.body %>
+        </div>
+        
+      </div>
+      
+      <div class="col-md-4">
+        <%= raw @service.sidebar %>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section class="related-pages">
+  <div class="container">
+    
+    <div class="row text-center">
+      <h2>Related pages</h2>
+      <hr>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
+        <div class="well">
+          <p class="service-header">Sheffield Vision Centre</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
+        <div class="well">
+          <p class="service-header">Sheffield Vision Centre</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
+        <div class="well">
+          <p class="service-header">Sheffield Vision Centre</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
+        <div class="well">
+          <p class="service-header">See more</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
