@@ -1,8 +1,8 @@
 <% content_for :seo do %>
-  <title></title>
-  <meta name="description" content="At Sheffield Teaching Hospitals we pride ourselves on providing world-class treatment">
-  <meta name="keywords" content="Private treatment, Hospital, Sheffield, NHS, Private Hospital">
-  <meta name="author" content="Sheffield Teaching Hospitals">
+  <title><%= @metatag.title %></title>
+  <meta name="description" content="<%= @metatag.description %>">
+  <meta name="keywords" content="<%= @metatag.keywords %>">
+  <meta name="author" content="<%= @metatag.author %>">
 <% end %>
 
 <section class="main-title">
