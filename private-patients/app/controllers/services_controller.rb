@@ -6,9 +6,7 @@ class ServicesController < ApplicationController
 
   def show
     @service = Service.find(params[:id])
-
     @metatag = @service.metatag
-    
   end
   
 end
