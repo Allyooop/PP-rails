@@ -12,6 +12,9 @@ A Rails app that covers the PP website
 8. source marking material for static pages
 9. source questions
 10. create payment page with supplied copy
+11. Upload to AWS
+  - Create EB instance
+  - add local keys
 
 ## Done
 
