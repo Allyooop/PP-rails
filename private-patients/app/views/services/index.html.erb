@@ -1,5 +1,9 @@
-<h1>Services#index</h1>
-<p>Find me in app/views/services/index.html.erb</p>
+<% content_for :seo do %>
+  <title>Private Healthcare Services - Sheffield Teaching Hospitals Private Healthcare</title>
+  <meta name="description" content="We currently offer a large array of private healthcare services to Sheffield and the wider area">
+  <meta name="keywords" content="private healthcare services, private health, private hospital, private hospital sheffield">
+  <meta name="author" content="Sheffield Teaching Hospitals">
+<% end %>
 
 <!-- 
 
@@ -8,3 +12,50 @@ with featured services in the top row
 with the all below in alphabetical order?
 
 -->
+
+<section class="main-title">
+  <div class="container">
+    <div class="row">
+      <h2>Our Services</h2>
+    </div>
+  </div>
+</section>
+
+<section class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        
+        <img src="http://placehold.it/800x250" class="img-responsive">
+        <div class="well">
+          <ol class="breadcrumb">
+            <li><%= link_to 'Home', root_path %></li>
+            <li class="active">Private Healthcare Services</li>
+          </ol>
+        </div>
+        
+        <div class="well">
+          <p class="lead">We currently offer a large array of private healthcare services to the Sheffield and beyond. Our award-winning Consultant-led services  </p>
+        </div>
+        
+        <h2 class="text-center">A-Z of Services</h2>
+        
+        <% @services.each do |s| %>
+        <section class="service-container">
+          <div id="<%= s.id %>">
+            <%= link_to service_path(s.id) do %>
+            <h2 class="service-header"><%= s.title %></h2>
+            <% end %>
+          </div>
+        </section>
+        <% end %>
+        
+      </div>
+      
+      <div class="col-md-4">
+        there
+      </div>
+    </div>
+  </div>
+
+</section>
