@@ -4,6 +4,9 @@ class Question < ActiveRecord::Base
   # body:text
   # priority:integer
   
+  belongs_to :service
+  # belongs_to :faq
+  
   validates :title, :body, presence: true
   # add validation to title length and body length
   

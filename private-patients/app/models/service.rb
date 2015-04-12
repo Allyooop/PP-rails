@@ -7,8 +7,10 @@ class Service < ActiveRecord::Base
   # string   "banner"
   # integer  "metatag_id"
   # text     "sidebar"
+  # integer "question_id"
   
   has_one :metatag
+  has_many :question
   
-  accepts_nested_attributes_for :metatag, allow_destroy: true
+  accepts_nested_attributes_for :metatag, :question, allow_destroy: true
 end

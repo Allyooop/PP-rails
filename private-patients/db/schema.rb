@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150323215626) do
+ActiveRecord::Schema.define(version: 20150412155816) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -82,10 +82,12 @@ ActiveRecord::Schema.define(version: 20150323215626) do
     t.string   "banner"
     t.integer  "metatag_id"
     t.text     "sidebar"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "question_id"
   end
 
   add_index "services", ["metatag_id"], name: "index_services_on_metatag_id"
+  add_index "services", ["question_id"], name: "index_services_on_question_id"
 
 end
