@@ -34,15 +34,13 @@ with the all below in alphabetical order?
           </ol>
         </div>
         
-        <div class="well">
-          <p>We currently offer a large array of private healthcare services to the Sheffield and beyond. Our award-winning Consultant-led services  </p>
-        </div>
+        
         
         <h2 class="text-center">A-Z of Services</h2>
         
         <% @services.each do |s| %>
         <section class="service-container">
-          <div id="<%= s.id %>">
+          <div class="well" id="<%= s.id %>">
             <%= link_to service_path(s.id) do %>
             <h2 class="service-header"><%= s.title %></h2>
             <% end %>
@@ -53,7 +51,9 @@ with the all below in alphabetical order?
       </div>
       
       <div class="col-md-4">
-        there
+        <div class="well">
+          <p>We currently offer a large array of private healthcare services to the Sheffield and beyond. Our award-winning Consultant-led services  </p>
+        </div>
       </div>
     </div>
   </div>
