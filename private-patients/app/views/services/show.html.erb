@@ -28,7 +28,7 @@
         </div>
         
         <div class="well">
-          <%= @service.body %>
+          <%= raw @service.body %>
         </div>
         
       </div>
@@ -45,35 +45,23 @@
   <div class="container">
     
     <div class="row text-center">
-      <h2>Related pages</h2>
+      <h2>Frequently Asked Questions</h2>
       <hr>
     </div>
     
     <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
-        <div class="well">
-          <p class="service-header">Sheffield Vision Centre</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
-        <div class="well">
-          <p class="service-header">Sheffield Vision Centre</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
-        <div class="well">
-          <p class="service-header">Sheffield Vision Centre</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6">
-        <img src="http://placehold.it/600x400" class="img-responsive" width="100%">
-        <div class="well">
-          <p class="service-header">See more</p>
-        </div>
-      </div>
+      
+      
+      <% @question.each do |s| %>
+        <section class="col-md-4" id="<%= s.id %>">
+          <div class="well">
+            <h4><%= s.title %></h4>
+            <p><%= s.body %></p>
+          </div>
+        </section>
+        <% end %>
+
+      
     </div>
   </div>
 </section>
