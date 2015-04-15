@@ -15,3 +15,5 @@ private-patients/db/*.sqlite3-journal
 private-patients/log/*
 private-patients/log/.keep
 private-patients/tmp
+
+private-patients/config/database.yml
