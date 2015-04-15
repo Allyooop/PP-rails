@@ -16,4 +16,5 @@ private-patients/log/*
 private-patients/log/.keep
 private-patients/tmp
 
-/private-patients/config/database.yml
+private-patients/config/database.yml
+private-patients/config/secrets.yml
