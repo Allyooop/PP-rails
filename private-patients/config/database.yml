@@ -20,7 +20,7 @@ development:
   database: db572756174
   pool: 5
   username: dbo572756174
-  password: see-this
+  password: and?
   host: db572756174.db.1and1.com
 
 # Warning: The database defined as "test" will be erased and
