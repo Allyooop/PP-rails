@@ -12,5 +12,7 @@ class Service < ActiveRecord::Base
   has_one :metatag
   has_many :question
   
+  validates :title, :body, presence: true
+  
   accepts_nested_attributes_for :metatag, :question, allow_destroy: true
 end
