@@ -34,7 +34,25 @@
       </div>
       
       <div class="col-md-4">
-        <%= raw @service.sidebar %>
+        
+        <div class="well well-phone">
+          <h4>Get a call back</h4>
+          <p>To book a consultation, or learn more about a particular service, get in touch with our team</p>
+          <a href="#" class="btn btn-primary">Contact us</a> <a href="tel:" class="btn btn-link">0114 222 1111</a>
+        </div>
+
+        
+        <div class="well">
+          <%= raw @service.sidebar %>
+        </div>
+        
+       <%= link_to services_path do %>
+        <img src="http://placehold.it/360x250" class="img-responsive">
+        <div class="well">
+          <h4>A-Z of our Services</h4>
+        </div>
+        <% end %>
+        
       </div>
     </div>
   </div>
