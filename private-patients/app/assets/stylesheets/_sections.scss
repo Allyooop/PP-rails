@@ -44,3 +44,17 @@
   box-shadow: none;
   
 }
+
+.well-title {
+  
+  padding: 5px 25px;
+  background-color: $brand-primary;
+  color: white;
+  
+  h4 {
+    
+    font-weight: 500;
+    
+  }
+  
+}

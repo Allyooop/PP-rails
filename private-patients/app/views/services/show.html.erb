@@ -37,9 +37,11 @@
         
         
         <!-- Change from service id to slug once slug added -->
-        <div class="well well-phone">
+        <div class="well-title">
           <h4>Get a call back</h4>
-          <p>To book a consultation, or learn more about a particular service, get in touch with our team</p>
+        </div>
+        <div class="well well-phone">
+          <p>To book a consultation, or learn more about our <%= @service.title %> service, get in touch with our team</p>
           <%= link_to "Contact us", contacts_path(:referral_service => @service.id), class: "btn btn-primary" %>
           <a href="tel:" class="btn btn-link">0114 222 1111</a>
         </div>
