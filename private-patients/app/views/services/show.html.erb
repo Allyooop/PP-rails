@@ -27,9 +27,14 @@
           </ol>
         </div>
         
-        <div class="well">
-          <%= raw @service.body %>
-        </div>
+        <article id="service" class="well">
+          <header>
+            <h4><%= @service.title %></h4>
+          </header>
+          <section>
+            <%= raw @service.body %>
+          </section>
+        </article>
         
       </div>
       
