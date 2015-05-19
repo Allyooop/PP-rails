@@ -19,7 +19,7 @@
       
       <div class="col-md-3">
         
-        <%= link_to "Get a call back", contacts_path(:referral_service => @service.id), class: "btn btn-lg btn-block btn-primary" %>
+        <%= link_to "Get a call back", contacts_path(:referral_service => @service.id), class: "btn btn-lg btn-block btn-warning" %>
         
         <div class="well headroom">
           <h4>Frequently asked Questions</h4>
@@ -29,9 +29,6 @@
           <% end %>
           </ul>
         </div>
-        
-
-        
       </div>
       
       
@@ -60,14 +57,10 @@
       
       <div class="col-md-3">
         
-        
-        <!-- Change from service id to slug once slug added -->
-        <div class="well-title">
-          <h4>Get a call back</h4>
-        </div>
         <div class="well well-phone">
+          <h4>Contact us</h4>
           <p>To book a consultation, or learn more about our <%= @service.title %> service, get in touch with our team</p>
-          <a href="tel:" class="btn btn-link">0114 222 1111</a>
+          <a href="tel:" class="btn btn-warning btn-block">0114 222 1111</a>
         </div>
 
         <%= link_to services_path do %>
